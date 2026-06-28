@@ -108,8 +108,6 @@ city-subsidy-radar/
 - **Netlify**：零配置，自动部署，免费
 - **GitHub Pages**：需配置 GitHub Actions
 
-详见 [上线前审查报告](../上线前审查报告.md)
-
 ## 许可
 
 MIT
