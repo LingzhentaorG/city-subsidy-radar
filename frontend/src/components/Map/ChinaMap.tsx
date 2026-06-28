@@ -94,51 +94,23 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
         return cachedData;
       }
 
-      console.log('从网络加载地图数据...');
-      // 否则从网络加载
-      const provincePromises = PROVINCE_ADCODES.map((adcode) => {
-        const useProvinceLevel =
-          MUNICIPALITY_ADCODES.includes(adcode) || PROVINCE_LEVEL_ADCODES.includes(adcode);
-        const url = useProvinceLevel
-          ? `https://geo.datav.aliyun.com/areas_v3/bound/${adcode}.json`
-          : `https://geo.datav.aliyun.com/areas_v3/bound/${adcode}_full.json`;
-        return fetch(url)
-          .then((res) => {
-            if (!res.ok) {
-              console.warn(`加载 ${adcode} 失败: ${res.status}`);
-              return null;
-            }
-            return res.json().catch(() => null);
-          })
-          .catch((err) => {
-            console.warn(`加载 ${adcode} 出错:`, err);
-            return null;
-          });
-      });
-
-      const provinceGeos = await Promise.all(provincePromises);
+      console.log('从本地加载地图数据...');
+      // 从本地加载地图数据
+      const response = await fetch('/geo/china.json');
+      if (!response.ok) {
+        throw new Error('加载本地地图数据失败');
+      }
+      const geoData = await response.json();
 
       // 收集所有城市级 feature
       const allCityFeatures: { type: string; properties: { name: string; adcode: string | number }; geometry: unknown }[] = [];
-      provinceGeos.forEach((geo, index) => {
-        if (!geo || !geo.features) return;
-        const adcode = PROVINCE_ADCODES[index];
-        const useProvinceLevel =
-          MUNICIPALITY_ADCODES.includes(adcode) || PROVINCE_LEVEL_ADCODES.includes(adcode);
-        if (useProvinceLevel) {
-          // 直辖市/港澳台只取省级（市级）边界
-          const feature = geo.features[0] as { type: string; properties: { name: string; adcode: string | number }; geometry: unknown };
-          if (feature?.properties?.adcode) {
+      if (geoData && geoData.features) {
+        geoData.features.forEach((feature: { type: string; properties: { name: string; adcode: string | number }; geometry: unknown }) => {
+          if (feature.properties && feature.properties.adcode) {
             allCityFeatures.push(feature);
           }
-        } else {
-          geo.features.forEach((feature: { type: string; properties: { name: string; adcode: string | number }; geometry: unknown }) => {
-            if (feature.properties && feature.properties.adcode) {
-              allCityFeatures.push(feature);
-            }
-          });
-        }
-      });
+        });
+      }
 
       console.log(`加载了 ${allCityFeatures.length} 个城市特征`);
 
