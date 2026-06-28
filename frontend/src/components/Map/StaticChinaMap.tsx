@@ -37,13 +37,16 @@ export default function StaticChinaMap(_props: StaticChinaMapProps) {
 
         // 构建所有城市数据 - 已覆盖的城市强制设置蓝色
         const allCities = geoData.features.map((f: { properties: { name: string; code: string } }) => {
-          const cityInfo = COVERED_CITIES.find((c) => c.adcode === f.properties.code);
+          const featureCode = String(f.properties.code);
+          const cityInfo = COVERED_CITIES.find((c) => c.adcode === featureCode);
           const isCovered = !!cityInfo;
           return {
             name: f.properties.name,
             value: isCovered ? 1 : 0,
-            itemStyle: isCovered ? { areaColor: '#3b82f6' } : { areaColor: '#94a3b8' },
-            ...cityInfo,
+            itemStyle: isCovered
+              ? { areaColor: '#3b82f6', borderColor: '#2563eb', borderWidth: 1 }
+              : { areaColor: '#f1f5f9' },
+            ...(cityInfo && { code: cityInfo.code, count: cityInfo.count }),
           };
         });
 
@@ -62,8 +65,8 @@ export default function StaticChinaMap(_props: StaticChinaMapProps) {
               center: [104, 36.5],
               label: { show: false },
               itemStyle: {
-                borderColor: '#cbd5e1',
-                borderWidth: 0.5,
+                borderWidth: 0,
+                areaColor: '#f1f5f9',
               },
               emphasis: {
                 disabled: true,

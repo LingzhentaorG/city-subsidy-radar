@@ -125,7 +125,7 @@ export const CATEGORY_NAMES: Record<SubsidyCategory, string> = {
 };
 
 // 地图缓存键名
-export const MAP_CACHE_KEY = 'china_map_geo_cache';
+export const MAP_CACHE_KEY = 'china_map_geo_cache_v2';
 
 // 地图缓存过期时间（24小时）
 export const MAP_CACHE_EXPIRY = 24 * 60 * 60 * 1000;

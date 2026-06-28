@@ -127,13 +127,15 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
           const cityInfo = COVERED_CITIES.find((c) => c.adcode === featureCode);
           const isCovered = !!cityInfo;
           // 调试日志
-          if (['110000', '310000', '440300', '440100'].includes(featureCode)) {
+          if (['110000', '310000', '440000', '440300', '440100'].includes(featureCode)) {
             console.log(`城市: ${f.properties.name}, code: ${featureCode}, 匹配: ${isCovered}`);
           }
           return {
             name: f.properties.name,
             value: isCovered ? 1 : 0,
-            itemStyle: isCovered ? { areaColor: '#3b82f6' } : { areaColor: '#f1f5f9' },
+            itemStyle: isCovered
+              ? { areaColor: '#3b82f6', borderColor: '#2563eb', borderWidth: 1 }
+              : { areaColor: '#f1f5f9' },
             ...(cityInfo && { code: cityInfo.code, count: cityInfo.count }),
           };
         });
@@ -173,11 +175,12 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
               label: { show: false },
               itemStyle: {
                 borderWidth: 0,
-                areaColor: '#94a3b8',
+                areaColor: '#f1f5f9',
               },
               emphasis: {
                 itemStyle: {
-                  borderWidth: 0,
+                  borderColor: '#93c5fd',
+                  borderWidth: 1,
                   areaColor: '#dbeafe',
                 },
                 label: { show: false },
