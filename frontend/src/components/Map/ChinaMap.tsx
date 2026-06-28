@@ -7,8 +7,8 @@ interface ChinaMapProps {
 }
 
 const COVERED_CITIES = [
-  { name: '北京市', code: 'beijing', adcode: '110000', count: 11 },
-  { name: '上海市', code: 'shanghai', adcode: '310000', count: 14 },
+  { name: '北京', code: 'beijing', adcode: '110000', count: 11 },
+  { name: '上海', code: 'shanghai', adcode: '310000', count: 14 },
   { name: '深圳市', code: 'shenzhen', adcode: '440300', count: 14 },
   { name: '广州市', code: 'guangzhou', adcode: '440100', count: 6 },
 ];
