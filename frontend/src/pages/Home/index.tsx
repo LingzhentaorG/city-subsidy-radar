@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* Main: 桌面端分屏，移动端纯内容 */}
       <main className="relative flex-1 lg:overflow-hidden">
-        <div className="mx-auto flex h-full w-full max-w-[1440px] items-center gap-8 px-5 lg:px-10 lg:gap-12">
+        <div className="mx-auto flex h-full w-full max-w-[1440px] items-start gap-8 px-5 pt-4 lg:px-10 lg:pt-6 lg:gap-12">
           {/* Left: Map — 仅桌面端显示 */}
           <section className="hidden h-full flex-1 overflow-hidden lg:block">
             <div className="relative h-full w-full overflow-hidden">
@@ -76,10 +76,10 @@ export default function Home() {
           </section>
 
           {/* Right: Product name + slogan + path entries */}
-          <section className="flex w-full flex-col justify-center lg:max-w-[440px] lg:flex-none lg:py-4">
+          <section className="flex w-full flex-col justify-start lg:max-w-[440px] lg:flex-none">
             <div className="shrink-0">
               {/* Badge */}
-              <div className="inline-flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-blue-50/80 px-3 py-1 text-xs font-semibold text-blue-700 sm:px-3.5 sm:py-1.5 sm:text-sm">
+              <div className="inline-flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-blue-50/80 px-3 py-1.5 text-xs font-semibold text-blue-700 sm:px-3.5 sm:py-1.5 sm:text-sm">
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500" />
@@ -88,75 +88,75 @@ export default function Home() {
               </div>
 
               {/* Title */}
-              <div className="mt-2">
-                <div className="text-3xl font-extrabold text-slate-900 sm:text-4xl lg:text-[3.25rem]">找到属于你的</div>
-                <div className="mt-1 text-3xl font-extrabold sm:text-4xl lg:mt-1.5 lg:text-[3.25rem]">
+              <div className="mt-3">
+                <div className="text-4xl font-extrabold text-slate-900 sm:text-4xl lg:text-[3.25rem]">找到属于你的</div>
+                <div className="mt-1.5 text-4xl font-extrabold sm:text-4xl lg:mt-2 lg:text-[3.25rem]">
                   <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">城市补贴</span>
                 </div>
               </div>
             </div>
 
             {/* Path entries */}
-            <div className="mt-5 shrink-0 space-y-3 sm:mt-6">
+            <div className="mt-8 shrink-0 space-y-4 sm:mt-6 lg:mt-8">
               <button
                 onClick={handlePathA}
-                className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-3 text-left shadow-sm transition-all hover:border-blue-300 hover:shadow-md hover:shadow-blue-500/5 sm:gap-4 sm:p-4"
+                className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm transition-all hover:border-blue-300 hover:shadow-md hover:shadow-blue-500/5 sm:gap-4 sm:p-4"
               >
                 <div className="absolute right-0 top-0 h-20 w-20 translate-x-6 -translate-y-6 rounded-full bg-blue-50 opacity-60 transition-transform group-hover:scale-150" />
-                <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-600 shadow-md shadow-blue-600/20 sm:h-11 sm:w-11">
-                  <svg className="h-4 w-4 text-white sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-blue-600 shadow-md shadow-blue-600/20 sm:h-11 sm:w-11">
+                  <svg className="h-5 w-5 text-white sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </div>
                 <div className="relative flex-1">
-                  <h3 className="text-sm font-bold text-slate-900 sm:text-base">我能拿到什么</h3>
-                  <p className="mt-0.5 text-xs leading-relaxed text-slate-500 sm:text-sm">
+                  <h3 className="text-base font-bold text-slate-900 sm:text-base">我能拿到什么</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-slate-500 sm:text-sm">
                     选择目标城市，智能匹配全部可领补贴
                   </p>
                 </div>
-                <svg className="relative h-4 w-4 shrink-0 text-blue-500 transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="relative h-5 w-5 shrink-0 text-blue-500 transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
 
               <button
                 onClick={handlePathB}
-                className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-3 text-left shadow-sm transition-all hover:border-emerald-300 hover:shadow-md hover:shadow-emerald-500/5 sm:gap-4 sm:p-4"
+                className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm transition-all hover:border-emerald-300 hover:shadow-md hover:shadow-emerald-500/5 sm:gap-4 sm:p-4"
               >
                 <div className="absolute right-0 top-0 h-20 w-20 translate-x-6 -translate-y-6 rounded-full bg-emerald-50 opacity-60 transition-transform group-hover:scale-150" />
-                <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-emerald-600 shadow-md shadow-emerald-600/20 sm:h-11 sm:w-11">
-                  <svg className="h-4 w-4 text-white sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-emerald-600 shadow-md shadow-emerald-600/20 sm:h-11 sm:w-11">
+                  <svg className="h-5 w-5 text-white sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
                 </div>
                 <div className="relative flex-1">
-                  <h3 className="text-sm font-bold text-slate-900 sm:text-base">哪个城市对我更好</h3>
-                  <p className="mt-0.5 text-xs leading-relaxed text-slate-500 sm:text-sm">
+                  <h3 className="text-base font-bold text-slate-900 sm:text-base">哪个城市对我更好</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-slate-500 sm:text-sm">
                     一键对比多城市补贴总额，数据帮你做决策
                   </p>
                 </div>
-                <svg className="relative h-4 w-4 shrink-0 text-emerald-500 transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="relative h-5 w-5 shrink-0 text-emerald-500 transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
 
               <button
                 onClick={handlePathC}
-                className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-3 text-left shadow-sm transition-all hover:border-amber-300 hover:shadow-md hover:shadow-amber-500/5 sm:gap-4 sm:p-4"
+                className="group relative flex w-full shrink-0 items-center gap-3 overflow-hidden rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm transition-all hover:border-amber-300 hover:shadow-md hover:shadow-amber-500/5 sm:gap-4 sm:p-4"
               >
                 <div className="absolute right-0 top-0 h-20 w-20 translate-x-6 -translate-y-6 rounded-full bg-amber-50 opacity-60 transition-transform group-hover:scale-150" />
-                <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-500 shadow-md shadow-amber-500/20 sm:h-11 sm:w-11">
-                  <svg className="h-4 w-4 text-white sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-amber-500 shadow-md shadow-amber-500/20 sm:h-11 sm:w-11">
+                  <svg className="h-5 w-5 text-white sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
                   </svg>
                 </div>
                 <div className="relative flex-1">
-                  <h3 className="text-sm font-bold text-slate-900 sm:text-base">查看政策</h3>
-                  <p className="mt-0.5 text-xs leading-relaxed text-slate-500 sm:text-sm">
+                  <h3 className="text-base font-bold text-slate-900 sm:text-base">查看政策</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-slate-500 sm:text-sm">
                     按城市、区域浏览全部人才政策，了解补贴详情
                   </p>
                 </div>
-                <svg className="relative h-4 w-4 shrink-0 text-amber-500 transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="relative h-5 w-5 shrink-0 text-amber-500 transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
@@ -166,8 +166,8 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="shrink-0 border-t border-slate-100 bg-white/50 lg:hidden">
-        <div className="mx-auto px-5 py-3 text-center text-xs text-slate-400">
+      <footer className="shrink-0 border-t border-slate-100 bg-white/50">
+        <div className="mx-auto max-w-7xl px-5 py-2.5 text-center text-xs text-slate-400">
           城市补贴雷达 · 数据仅供参考，以各地人社局最新政策为准
         </div>
       </footer>
