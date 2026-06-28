@@ -87,10 +87,10 @@ export default function ChinaMap({ onCityClick }: ChinaMapProps) {
       const geoData = await response.json();
 
       // 收集所有城市级 feature
-      const allCityFeatures: { type: string; properties: { name: string; adcode: string | number }; geometry: unknown }[] = [];
+      const allCityFeatures: { type: string; properties: { name: string; code: string }; geometry: unknown }[] = [];
       if (geoData && geoData.features) {
-        geoData.features.forEach((feature: { type: string; properties: { name: string; adcode: string | number }; geometry: unknown }) => {
-          if (feature.properties && feature.properties.adcode) {
+        geoData.features.forEach((feature: { type: string; properties: { name: string; code: string }; geometry: unknown }) => {
+          if (feature.properties && feature.properties.code) {
             allCityFeatures.push(feature);
           }
         });
