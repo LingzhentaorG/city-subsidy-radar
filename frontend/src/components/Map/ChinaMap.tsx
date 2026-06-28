@@ -13,14 +13,6 @@ const COVERED_CITIES = [
   { name: '广州市', code: 'guangzhou', adcode: '440100', count: 6 },
 ];
 
-// adcode 到 name 的映射
-const ADCODE_TO_NAME: Record<string, string> = {
-  '110000': '北京市',
-  '310000': '上海市',
-  '440300': '深圳市',
-  '440100': '广州市',
-};
-
 
 // 地图缓存接口
 interface MapCache {
