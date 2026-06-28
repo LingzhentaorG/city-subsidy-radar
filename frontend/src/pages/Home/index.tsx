@@ -88,7 +88,7 @@ export default function Home() {
               </div>
 
               {/* Title */}
-              <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight text-slate-900 sm:mt-5 sm:text-4xl lg:text-[3.25rem]">
+              <h1 className="mt-4 text-3xl font-extrabold leading-snug text-slate-900 sm:mt-5 sm:text-4xl lg:text-[3.25rem]">
                 找到属于你的
                 <br />
                 <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
