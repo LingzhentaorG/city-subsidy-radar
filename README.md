@@ -100,14 +100,6 @@ city-subsidy-radar/
 └── README.md
 ```
 
-## 部署
-
-本项目为纯静态 SPA，可部署到任意静态托管平台：
-
-- **Vercel**（推荐）：零配置，自动部署，免费
-- **Netlify**：零配置，自动部署，免费
-- **GitHub Pages**：需配置 GitHub Actions
-
 ## 许可
 
 MIT
