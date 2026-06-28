@@ -8,7 +8,7 @@ interface StaticChinaMapProps {
 const COVERED_CITIES = [
   { name: '北京市', code: 'beijing', adcode: '110000', count: 11 },
   { name: '上海市', code: 'shanghai', adcode: '310000', count: 14 },
-  { name: '广东省', code: 'shenzhen', adcode: '440000', count: 20 },
+  { name: '深圳市', code: 'shenzhen', adcode: '440300', count: 14 },
   { name: '广州市', code: 'guangzhou', adcode: '440100', count: 6 },
 ];
 
@@ -22,8 +22,8 @@ export default function StaticChinaMap(_props: StaticChinaMapProps) {
       renderer: 'canvas',
     });
 
-    // 从本地加载地图数据
-    fetch('/geo/china.json')
+    // 从本地加载城市级地图数据
+    fetch('/geo/china-cities.json')
       .then((res) => {
         if (!res.ok) throw new Error('加载地图数据失败');
         return res.json();
