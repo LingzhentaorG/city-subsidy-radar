@@ -109,8 +109,8 @@
 # 克隆仓库
 git clone https://github.com/chi-ga/city-subsidy-radar.git
 
-# 进入项目目录
-cd city-subsidy-radar/city-subsidy-radar
+# 进入前端项目目录
+cd city-subsidy-radar/frontend
 
 # 安装依赖
 npm install
@@ -131,7 +131,7 @@ npm run preview
 
 ```
 city-subsidy-radar/
-├── city-subsidy-radar/          # 前端项目
+├── frontend/                  # 前端项目
 │   ├── src/
 │   │   ├── pages/              # 页面组件
 │   │   │   ├── Home/           # 首页（中国地图）
