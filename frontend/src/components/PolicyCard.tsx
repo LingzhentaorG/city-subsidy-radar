@@ -365,7 +365,7 @@ export function PolicyCard({
       {/* 头部：可点击展开 */}
       <button
         onClick={() => setExpanded((v) => !v)}
-        className="flex w-full items-center justify-between gap-3 p-4 text-left sm:gap-4 sm:p-5"
+        className="flex w-full items-start justify-between gap-2 p-4 text-left sm:gap-4 sm:p-5"
       >
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
@@ -384,8 +384,19 @@ export function PolicyCard({
             <span className="text-[10px] text-slate-400 sm:text-xs">{subsidy.amount.period || '一次性'}</span>
           </div>
           <p className="mt-1 line-clamp-2 text-sm font-bold text-slate-900 sm:mt-1.5 sm:text-base">{subsidy.name}</p>
+          {/* 移动端：金额在标题下方 */}
+          <div className="mt-1 sm:hidden">
+            <span className={`text-sm font-extrabold ${style.text}`}>
+              {amountDisplay.main}
+              {amountDisplay.unit && <span className="ml-0.5 text-[10px] font-medium text-slate-500">{amountDisplay.unit}</span>}
+            </span>
+            {amountDisplay.sub && (
+              <span className="ml-1.5 text-[10px] font-medium text-slate-400">{amountDisplay.sub}</span>
+            )}
+          </div>
         </div>
-        <div className="ml-2 flex flex-col items-end shrink-0 sm:ml-4">
+        {/* 桌面端：金额在右侧 */}
+        <div className="ml-2 hidden shrink-0 flex-col items-end sm:ml-4 sm:flex">
           <span className={`text-base font-extrabold ${style.text} sm:text-lg`}>
             {amountDisplay.main}
             {amountDisplay.unit && <span className="ml-0.5 text-[10px] font-medium text-slate-500 sm:text-xs">{amountDisplay.unit}</span>}
@@ -393,12 +404,12 @@ export function PolicyCard({
           {amountDisplay.sub && (
             <span className="mt-0.5 text-[10px] font-medium text-slate-400 sm:text-xs">{amountDisplay.sub}</span>
           )}
-          <span className="mt-0.5 text-slate-400 transition-transform duration-200 sm:mt-1" style={{ transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
-            <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-          </span>
         </div>
+        <span className="mt-0.5 shrink-0 text-slate-400 transition-transform duration-200 sm:mt-1" style={{ transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+          <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </span>
       </button>
 
       {/* 展开内容 */}
