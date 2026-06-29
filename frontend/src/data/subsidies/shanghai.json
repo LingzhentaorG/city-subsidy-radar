@@ -224,7 +224,7 @@
     "notes": "有效（2026-2030版）。首次在临港新片区就业的前沿产业人才：本科1-1.3万、硕士2-2.6万、博士8-10.4万（一次性）。毕业两年内高校毕业生上浮30%。需经高新产业和科技创新处认定为重点企业人才，承诺继续工作2年以上。",
     "location": "上海市",
     "tier": 2,
-    "exclusiveGroup": "shanghai-lingang-anjia",
+    "exclusiveGroup": "shanghai-district",
     "tieredAmount": {
       "本科": {
         "min": 10000,
@@ -396,7 +396,7 @@
     "notes": "有效（2026年度已开放申报）。商务金融、科技创新、文化创意等10类人才分三档1000/1500/2000元/月；海外回国类需世界排名前200高校硕士/博士。累计补贴时限一般不超过36个月。",
     "location": "上海市·徐汇区",
     "tier": 2,
-    "exclusiveGroup": "shanghai-rent"
+    "exclusiveGroup": "shanghai-district"
   },
   {
     "id": "shanghai-changningquyouxiurencaiz",
@@ -446,7 +446,7 @@
     "notes": "有效。符合人才引进落户条件的全日制普通高校应届毕业生和海外留学生，先租后补，每人每月1600元。累计享受补贴时间不超过24个月。",
     "location": "上海市·长宁区",
     "tier": 1,
-    "exclusiveGroup": "shanghai-rent"
+    "exclusiveGroup": "shanghai-district"
   },
   {
     "id": "shanghai-liuxuerenyuanhuiguojingg",
@@ -492,7 +492,7 @@
     "notes": "有效。留学回国（境）人员不以就业和地域为前提，租住长宁区指定人才公寓，最长12个月，最高补贴租金总额4.5万元。",
     "location": "上海市·长宁区",
     "tier": 2,
-    "exclusiveGroup": "shanghai-rent"
+    "exclusiveGroup": "shanghai-district"
   },
   {
     "id": "shanghai-haineiwaiyouxiubiyesheng",
@@ -564,7 +564,7 @@
     "notes": "有效。需世界排名前100名高校或「双一流」建设高校及学科的硕士及以上学位，获得学位未满2年。硕士前3个月2000元/月、后3个月1500元/月；博士（博士后）前3个月3000元/月、后3个月2000元/月；第一阶段最长6个月，入职虹口后再延长6个月，最长共1年。采取「积分+摇号」方式确定租住资格。",
     "location": "上海市·虹口区",
     "tier": 2,
-    "exclusiveGroup": "shanghai-rent"
+    "exclusiveGroup": "shanghai-district"
   },
   {
     "id": "shanghai-yangpuqu-rencaianju",
@@ -617,7 +617,7 @@
     "notes": "有效（2025年度已开放申请）。本条目仅对应「应届毕业生及海外留学生」档次：本科600元/月、硕士800元/月、博士1000元/月，最长12个月。该政策另有「紧缺急需人才」（社保基数达社平1.5-3倍，1000-2000元/月）和「高层次人才」（年个税15万以上，8000元/月，最长2年）两个档次，需经人才认定。",
     "location": "上海市·杨浦区",
     "tier": 1,
-    "exclusiveGroup": "shanghai-rent",
+    "exclusiveGroup": "shanghai-district",
     "tieredAmount": {
       "本科": {
         "min": 600,
@@ -690,7 +690,7 @@
     "notes": "有效（2024年发布）。在青浦区就业的青年人才，按学历层次给予一次性租房补贴支持。毕业三年内在青浦就业创业。",
     "location": "上海市·青浦区",
     "tier": 1,
-    "exclusiveGroup": "shanghai-rent"
+    "exclusiveGroup": "shanghai-district"
   },
   {
     "id": "shanghai-fengxianquqingnianrencai",
@@ -734,7 +734,7 @@
     "notes": "有效（2025年5月20日发布）。面向四类青年人才：来奉实习（最长6个月免费住宿）、来奉求职（最长15天免费住宿）、在奉工作（租房补贴最高2000元/月）、购房补贴最高80万元。",
     "location": "上海市·奉贤区",
     "tier": 3,
-    "exclusiveGroup": "shanghai-rent"
+    "exclusiveGroup": "shanghai-district"
   },
   {
     "id": "shanghai-fengxianqurencaianju",
@@ -784,6 +784,6 @@
     "notes": "有效。在奉贤区工作并缴纳社保满6个月以上的人才，可享受租房补贴最高2000元/月、购房补贴最高80万元。",
     "location": "上海市·奉贤区",
     "tier": 1,
-    "exclusiveGroup": "shanghai-rent"
+    "exclusiveGroup": "shanghai-district"
   }
 ]

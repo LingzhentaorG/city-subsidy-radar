@@ -235,7 +235,7 @@
     "notes": "⚠ 前置条件：用人单位须在海淀区注册纳税，且属于海淀区\"1+X+1\"现代化产业体系（人工智能，集成电路、生物医药、商业航天、工业软件、科学仪器等战略性新兴产业，具身智能、量子科技、脑机接口等未来产业，以及科技服务业）。用人单位审核通过后个人方可申请，个人不能直接申报。现行有效（海住保办字〔2026〕1号，有效期至2028年12月31日）。应届毕业生（2026年1月—12月期间毕业）安居补贴每月1000元，最长连续领取2年；在海淀北部四镇（西北旺镇、温泉镇、苏家坨镇、上庄镇）租住市场房屋的增加每月500元安居奖励，与基础补贴合并发放。申请人及家庭成员（配偶和未成年子女）在北京市无住房且未享受过各类保障性住房或租房补贴。不限户籍，北京任意区租房均可。与市级及本区其他政府性住房保障政策互斥，不能重复享受。中途离职、在京购房或享受其他住房保障政策的，次月起停止发放。",
     "location": "北京市·海淀区",
     "tier": 1,
-    "exclusiveGroup": "beijing-rent"
+    "exclusiveGroup": "beijing-district"
   },
   {
     "id": "beijing-shijingshanqu2025zhi2027",
@@ -271,7 +271,7 @@
     "notes": "现行有效（2025-2027年度；石人社发〔2025〕1号）。未就业青年见习补贴每月880元；零工就业介绍补贴每人次20元；用人单位招用技能人才补贴等七大板块17项措施。失效时间2027年12月31日。",
     "location": "北京市·石景山区",
     "tier": 3,
-    "exclusiveGroup": "beijing-living"
+    "exclusiveGroup": "beijing-district"
   },
   {
     "id": "beijing-beijingchengshifuzhongxi",
@@ -311,7 +311,7 @@
     "notes": "现行有效（2025年6月发布2.0版，新增青年后备人才类别，储备4000余套人才公寓）。人才资金奖励最高100万元；购房补助最高150万元；青年后备人才第一年免租，后两年实行房租阶梯优惠；优先为\"运河英才\"申办落户。需签订3年及以上劳动合同。",
     "location": "北京市·通州区",
     "tier": 3,
-    "exclusiveGroup": "beijing-talent"
+    "exclusiveGroup": "beijing-district"
   },
   {
     "id": "beijing-shunyiqu-qingchuang",
@@ -371,7 +371,7 @@
         "period": "一次性"
       }
     },
-    "exclusiveGroup": "beijing-living"
+    "exclusiveGroup": "beijing-district"
   },
   {
     "id": "beijing-changpingquqingnianrenca",
@@ -411,7 +411,7 @@
     "notes": "现行有效（2025年发布，\"昌聚工程\"已升级，增设青年人才专项赛道）。35周岁及以下青年人才；创业补贴2万元起步，最高10万元；硕士生活补贴1000元/月最长1年；博士2000元/月最长1年；\"昌聚工程\"创业赛道50万-100万元；免费工位1年。入选\"昌聚工程\"可获\"昌聚英才卡\"，连续两年每年不超过5万元服务保障资金。",
     "location": "北京市·昌平区",
     "tier": 2,
-    "exclusiveGroup": "beijing-living"
+    "exclusiveGroup": "beijing-district"
   },
   {
     "id": "beijing-huairouqurencaizhufangba",
@@ -454,6 +454,6 @@
     "notes": "现行有效（2026年已启动配租工作，提供300套保障性租赁住房）。35岁以下青年人才，全日制本科及以上学历。求职7天免费住房，就业创业起步期3个月免费周转住房，期满后可享最长6年长租补贴（按实际应付租金的50%给予长达3年补贴；3年补贴期满后，按实际应付租金的25%再给予3年补贴）。雁栖国际人才社区一期889套已投用。",
     "location": "北京市·怀柔区",
     "tier": 3,
-    "exclusiveGroup": "beijing-rent"
+    "exclusiveGroup": "beijing-district"
   }
 ]
