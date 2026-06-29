@@ -2849,6 +2849,36 @@
           "code": "083201T",
           "name": "交叉工程",
           "first_level_discipline": "材料科学与工程"
+        },
+        {
+          "code": "080220T",
+          "name": "农林智能装备工程",
+          "first_level_discipline": "机械工程"
+        },
+        {
+          "code": "080423T",
+          "name": "稀土材料科学与工程",
+          "first_level_discipline": "材料科学与工程"
+        },
+        {
+          "code": "081013T",
+          "name": "工程软件",
+          "first_level_discipline": "土木工程"
+        },
+        {
+          "code": "081906T",
+          "name": "智能海洋装备",
+          "first_level_discipline": "船舶与海洋工程"
+        },
+        {
+          "code": "082605T",
+          "name": "健康科学与技术",
+          "first_level_discipline": "生物医学工程"
+        },
+        {
+          "code": "082713T",
+          "name": "咖啡科学与工程",
+          "first_level_discipline": "食品科学与工程"
         }
       ]
     },
@@ -3065,6 +3095,16 @@
           "code": "090702T",
           "name": "草坪科学与工程",
           "first_level_discipline": "草学"
+        },
+        {
+          "code": "090117TK",
+          "name": "生物育种技术",
+          "first_level_discipline": "作物学"
+        },
+        {
+          "code": "090208TK",
+          "name": "生态修复学",
+          "first_level_discipline": "水土保持与荒漠化防治学"
         }
       ]
     },
@@ -4053,6 +4093,11 @@
           "code": "130513T",
           "name": "珠宝首饰设计与工艺",
           "first_level_discipline": "艺术学"
+        },
+        {
+          "code": "130213TK",
+          "name": "冰雪舞蹈表演",
+          "first_level_discipline": "音乐与舞蹈学"
         }
       ]
     }
