@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { getAllSubsidies, getLocationsForCity } from '../../data';
 import { CATEGORY_NAMES, CITY_NAMES } from '../../constants';
 import { PolicyCard } from '../../components/PolicyCard';
-import type { CityCode, SubsidyCategory } from '../../constants';
+import type { CityCode } from '../../constants';
 import type { Subsidy } from '../../types';
 
 const ChevronDownIcon = () => (
@@ -17,15 +17,20 @@ export default function Policies() {
   const allSubsidies = useMemo(() => getAllSubsidies(), []);
   const [city, setCity] = useState<CityCode | ''>('');
   const [district, setDistrict] = useState<string>('');
-  const [categoryFilter, setCategoryFilter] = useState<SubsidyCategory | ''>('');
+  const [categoryFilter, setCategoryFilter] = useState<string>('');
 
   const districts = useMemo(() => (city ? getLocationsForCity(city) : []), [city]);
+
+  // 唯一的展示标签列表（去重）
+  const uniqueCategoryLabels = useMemo(() => {
+    return [...new Set(Object.values(CATEGORY_NAMES))];
+  }, []);
 
   const filteredPolicies = useMemo(() => {
     return allSubsidies.filter((s) => {
       if (city && s.city !== city) return false;
       if (district && s.application.location !== district && s.application.location !== `${CITY_NAMES[s.city as CityCode]}市`) return false;
-      if (categoryFilter && s.category !== categoryFilter) return false;
+      if (categoryFilter && CATEGORY_NAMES[s.category] !== categoryFilter) return false;
       return true;
     });
   }, [allSubsidies, city, district, categoryFilter]);
@@ -115,12 +120,12 @@ export default function Policies() {
               <div className="relative">
                 <select
                   value={categoryFilter}
-                  onChange={(e) => setCategoryFilter(e.target.value as SubsidyCategory | '')}
+                  onChange={(e) => setCategoryFilter(e.target.value)}
                   className="block w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm shadow-sm transition-colors focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/10"
                 >
                   <option value="">全部类型</option>
-                  {Object.entries(CATEGORY_NAMES).map(([code, name]) => (
-                    <option key={code} value={code}>{name}</option>
+                  {uniqueCategoryLabels.map((label) => (
+                    <option key={label} value={label}>{label}</option>
                   ))}
                 </select>
                 <ChevronDownIcon />
