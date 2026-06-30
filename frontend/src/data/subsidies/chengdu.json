@@ -348,7 +348,7 @@
       "degree": ["博士"],
       "employmentRequired": true,
       "householdRequired": false,
-      "requiresFullTime": true
+      "requiresFullTime": false
     },
     "application": {
       "deadline": "待核实",
@@ -405,7 +405,7 @@
       "degree": ["硕士", "博士"],
       "employmentRequired": true,
       "householdRequired": false,
-      "requiresFullTime": true
+      "requiresFullTime": false
     },
     "application": {
       "deadline": "待核实",
