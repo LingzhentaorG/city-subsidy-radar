@@ -1,139 +1,5 @@
 [
   {
-    "id": "nanning-shiji-qingnianrencaishenghuobuzhu-boshi",
-    "city": "nanning",
-    "name": "产业领域急需紧缺青年人才生活补助（博士/副高级及以上职称）",
-    "category": "living",
-    "amount": {
-      "min": 50000,
-      "max": 50000,
-      "unit": "元",
-      "period": "每年",
-      "durationMonths": 12
-    },
-    "conditions": {
-      "degree": ["博士"],
-      "ageLimit": 40,
-      "ageLimitExclusive": false,
-      "employmentRequired": true,
-      "householdRequired": false,
-      "requiresFullTime": false
-    },
-    "application": {
-      "deadline": "须在符合上述条件之日起6个月内申报",
-      "channel": "南宁人社网上办事大厅、“南宁人社”微信公众号、“南宁智慧人社”微信小程序",
-      "materials": [
-        "劳动合同扫描件或照片",
-        "毕业证、学位证扫描件或照片",
-        "专业技术资格证书、职业技能等级证书、任职文件扫描件或照片（如有）",
-        "社会保障卡（需开通金融功能）"
-      ],
-      "process": [
-        "个人登录南宁人社网上办事大厅或微信公众号、微信小程序申报",
-        "首次引才单位网上核验确认",
-        "人社部门审核、公示5个工作日",
-        "拨付至申请人社会保障卡银行账户"
-      ],
-      "location": "市级",
-      "url": "https://ggfw.nn12333.com:8081/nnmh/"
-    },
-    "policySource": "南人社发〔2026〕1号",
-    "effectiveDate": "2026-01-12",
-    "notes": "有效。首次引进到《南宁市产业发展急需紧缺人才企业名录》企业的应届博士/副高级及以上职称，或《名录》以外南宁市其他企事业单位的应届博士；签订3年及以上劳动合同，连续缴纳职工基本养老保险6个月及以上，年龄40周岁（含）以下，申报时仍在首次引才单位就业。博士/副高每年5万元、最高25万元。已享受青年人才生活补助但同时符合高层次人才首次购房补贴及毕业生专项生活补助条件的，按“就高不重复”原则补足差额。",
-    "location": "南宁市·市级",
-    "tier": 2,
-    "exclusiveGroup": ""
-  },
-  {
-    "id": "nanning-shiji-qingnianrencaishenghuobuzhu-shuoshi",
-    "city": "nanning",
-    "name": "产业领域急需紧缺青年人才生活补助（硕士/高级技师/中级职称）",
-    "category": "living",
-    "amount": {
-      "min": 20000,
-      "max": 20000,
-      "unit": "元",
-      "period": "每年",
-      "durationMonths": 12
-    },
-    "conditions": {
-      "degree": ["硕士"],
-      "ageLimit": 40,
-      "ageLimitExclusive": false,
-      "employmentRequired": true,
-      "householdRequired": false,
-      "requiresFullTime": true
-    },
-    "application": {
-      "deadline": "须在符合上述条件之日起6个月内申报",
-      "channel": "南宁人社网上办事大厅、“南宁人社”微信公众号、“南宁智慧人社”微信小程序",
-      "materials": [
-        "劳动合同扫描件或照片",
-        "毕业证、学位证扫描件或照片",
-        "专业技术资格证书、职业技能等级证书、任职文件扫描件或照片（如有）",
-        "社会保障卡（需开通金融功能）"
-      ],
-      "process": [
-        "个人登录南宁人社网上办事大厅或微信公众号、微信小程序申报",
-        "首次引才单位网上核验确认",
-        "人社部门审核、公示5个工作日",
-        "拨付至申请人社会保障卡银行账户"
-      ],
-      "location": "市级",
-      "url": "https://ggfw.nn12333.com:8081/nnmh/"
-    },
-    "policySource": "南人社发〔2026〕1号",
-    "effectiveDate": "2026-01-12",
-    "notes": "有效。首次引进到《南宁市产业发展急需紧缺人才企业名录》企业的全日制硕士研究生、2017年起国家统一下达招生计划的非全日制硕士研究生、高级技师、中级职称获得者。签订3年及以上劳动合同，连续缴纳职工基本养老保险6个月及以上，年龄40周岁（含）以下，申报时仍在首次引才单位就业。每年2万元、最高10万元。已享受青年人才生活补助但同时符合高层次人才首次购房补贴及毕业生专项生活补助条件的，按“就高不重复”原则补足差额。",
-    "location": "南宁市·市级",
-    "tier": 2,
-    "exclusiveGroup": ""
-  },
-  {
-    "id": "nanning-shiji-qingnianrencaishenghuobuzhu-benke",
-    "city": "nanning",
-    "name": "产业领域急需紧缺青年人才生活补助（本科/技师/初级职称）",
-    "category": "living",
-    "amount": {
-      "min": 10000,
-      "max": 10000,
-      "unit": "元",
-      "period": "一次性"
-    },
-    "conditions": {
-      "degree": ["本科"],
-      "ageLimit": 40,
-      "ageLimitExclusive": false,
-      "employmentRequired": true,
-      "householdRequired": false,
-      "requiresFullTime": true
-    },
-    "application": {
-      "deadline": "须在符合上述条件之日起6个月内申报",
-      "channel": "南宁人社网上办事大厅、“南宁人社”微信公众号、“南宁智慧人社”微信小程序",
-      "materials": [
-        "劳动合同扫描件或照片",
-        "毕业证、学位证扫描件或照片",
-        "专业技术资格证书、职业技能等级证书、任职文件扫描件或照片（如有）",
-        "社会保障卡（需开通金融功能）"
-      ],
-      "process": [
-        "个人登录南宁人社网上办事大厅或微信公众号、微信小程序申报",
-        "首次引才单位网上核验确认",
-        "属地县（市、区）、开发区人社部门审核、公示5个工作日",
-        "拨付至申请人社会保障卡银行账户"
-      ],
-      "location": "市级",
-      "url": "https://ggfw.nn12333.com:8081/nnmh/"
-    },
-    "policySource": "南人社发〔2026〕1号",
-    "effectiveDate": "2026-01-12",
-    "notes": "有效。首次引进到《南宁市产业发展急需紧缺人才企业名录》企业的全日制本科毕业生、技师、初级职称获得者。签订3年及以上劳动合同，连续缴纳职工基本养老保险6个月及以上，年龄40周岁（含）以下，申报时仍在首次引才单位就业。一次性1万元。已享受青年人才生活补助但同时符合高层次人才首次购房补贴及毕业生专项生活补助条件的，按“就高不重复”原则补足差额。",
-    "location": "南宁市·市级",
-    "tier": 2,
-    "exclusiveGroup": ""
-  },
-  {
     "id": "nanning-shiji-zhuanxiangshenghuobuzhu",
     "city": "nanning",
     "name": "大中专院校毕业生专项生活补助",
@@ -146,7 +12,12 @@
       "durationMonths": 10
     },
     "conditions": {
-      "degree": ["大专", "本科", "硕士", "博士"],
+      "degree": [
+        "大专",
+        "本科",
+        "硕士",
+        "博士"
+      ],
       "ageLimit": 0,
       "employmentRequired": true,
       "householdRequired": false,
@@ -190,7 +61,12 @@
       "durationMonths": 10
     },
     "conditions": {
-      "degree": ["大专", "本科", "硕士", "博士"],
+      "degree": [
+        "大专",
+        "本科",
+        "硕士",
+        "博士"
+      ],
       "ageLimit": 0,
       "employmentRequired": true,
       "householdRequired": false,
@@ -232,7 +108,12 @@
       "period": "一次性"
     },
     "conditions": {
-      "degree": ["大专", "本科", "硕士", "博士"],
+      "degree": [
+        "大专",
+        "本科",
+        "硕士",
+        "博士"
+      ],
       "ageLimit": 0,
       "employmentRequired": false,
       "householdRequired": false,
@@ -264,6 +145,122 @@
     "notes": "有效。广西统一政策，南宁各区均可申领，办理地点为企业注册地所在城区。首次在设区市辖区内创办小微企业，自工商注册登记之日起正常运营6个月（含）以上，注册登记日距申请之日不超过18个月（含），申请时仍在经营。毕业年度和毕业5年内高校毕业生。同一人员创办多个创业实体只享受一次；同一创业地址多个创业实体仅1家享受。与市级生活补助、就业奖励可叠加享受。",
     "location": "南宁市·良庆区",
     "tier": 1,
-    "exclusiveGroup": ""
+    "exclusiveGroup": "nanning-district"
+  },
+  {
+    "id": "nanning-shiji-qingnianrencaishenghuobuzhu",
+    "city": "nanning",
+    "name": "产业领域急需紧缺青年人才生活补助",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 50000,
+      "unit": "元",
+      "period": "每年",
+      "durationMonths": 12
+    },
+    "conditions": {
+      "degree": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "ageLimit": 40,
+      "ageLimitExclusive": false,
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": false,
+      "criterionSets": [
+        {
+          "id": "benke",
+          "name": "全日制本科/技师/初级职称",
+          "degree": [
+            "本科"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 10000,
+            "max": 10000,
+            "unit": "元",
+            "period": "一次性"
+          }
+        },
+        {
+          "id": "shuoshi",
+          "name": "全日制硕士/高级技师/中级职称",
+          "degree": [
+            "硕士"
+          ],
+          "requiresFullTime": true,
+          "amount": {
+            "min": 20000,
+            "max": 20000,
+            "unit": "元",
+            "period": "每年",
+            "durationMonths": 12
+          }
+        },
+        {
+          "id": "boshi",
+          "name": "博士/副高级及以上职称",
+          "degree": [
+            "博士"
+          ],
+          "amount": {
+            "min": 50000,
+            "max": 50000,
+            "unit": "元",
+            "period": "每年",
+            "durationMonths": 12
+          }
+        }
+      ]
+    },
+    "application": {
+      "deadline": "须在符合上述条件之日起6个月内申报",
+      "channel": "南宁人社网上办事大厅、“南宁人社”微信公众号、“南宁智慧人社”微信小程序",
+      "materials": [
+        "劳动合同扫描件或照片",
+        "毕业证、学位证扫描件或照片",
+        "专业技术资格证书、职业技能等级证书、任职文件扫描件或照片（如有）",
+        "社会保障卡（需开通金融功能）"
+      ],
+      "process": [
+        "个人登录南宁人社网上办事大厅或微信公众号、微信小程序申报",
+        "首次引才单位网上核验确认",
+        "人社部门审核、公示5个工作日",
+        "拨付至申请人社会保障卡银行账户"
+      ],
+      "location": "市级",
+      "url": "https://ggfw.nn12333.com:8081/nnmh/"
+    },
+    "policySource": "南人社发〔2026〕1号",
+    "effectiveDate": "2026-01-12",
+    "notes": "有效。南人社发〔2026〕1号。首次引进到《南宁市产业发展急需紧缺人才企业名录》企业（或名录以外南宁市其他企事业单位的应届博士），签订3年及以上劳动合同，连续缴纳职工基本养老保险6个月及以上，年龄40周岁（含）以下，申报时仍在首次引才单位就业。本科一次性1万元；硕士每年2万元、最高10万元；博士/副高每年5万元、最高25万元。本科/硕士要求全日制（2017年起国家统一下达招生计划的非全日制硕士也可）。已享受青年人才生活补助但同时符合高层次人才首次购房补贴及毕业生专项生活补助条件的，按“就高不重复”原则补足差额。",
+    "location": "南宁市·市级",
+    "tier": 2,
+    "exclusiveGroup": "",
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 20000,
+        "max": 20000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 12
+      },
+      "博士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "每年",
+        "durationMonths": 12
+      }
+    }
   }
 ]
