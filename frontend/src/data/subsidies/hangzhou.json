@@ -1,0 +1,385 @@
+[
+  {
+    "id": "hangzhou-shiji-yingjieshenghuobutie",
+    "city": "hangzhou",
+    "name": "杭州市应届毕业生生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "中国籍毕业2年内申请，外国国籍毕业6年内申请",
+      "channel": "亲清在线数字平台或杭州市民卡APP—杭州人才码",
+      "materials": [
+        "申请人姓名、证件号码、银行卡号等基本信息",
+        "国（境）外高校毕业生需提供教育部留学服务中心学历学位认证书编号",
+        "有劳务派遣经历者需由用工单位填写实际历史用工单位及统一社会信用代码"
+      ],
+      "process": [
+        "申请人向用人单位提交材料",
+        "用人单位通过亲清在线数字平台或申请人在杭州市民卡APP—杭州人才码提交申请",
+        "系统自动比对审核",
+        "审核通过后拨付至申请人银行卡"
+      ],
+      "location": "市级",
+      "url": "https://hrss.hangzhou.gov.cn/art/2024/5/13/art_1229810556_4336829.html"
+    },
+    "policySource": "杭人社发〔2023〕126号",
+    "effectiveDate": "2019-06-03",
+    "notes": "有效。本科1万元、硕士3万元、博士10万元，分两笔发放（每笔50%）。毕业时间在2021年10月14日（含）之前的博士仍为5万元。需在符合条件杭州用人单位就业或自主创业，并按规定缴纳社保。",
+    "location": "杭州市",
+    "tier": 1
+  },
+  {
+    "id": "hangzhou-shiji-yingjiuzufangbutie",
+    "city": "hangzhou",
+    "name": "杭州市新引进应届大学生租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 10000,
+      "max": 30000,
+      "unit": "元",
+      "period": "每年"
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "毕业2年内申请",
+      "channel": "亲清在线数字平台",
+      "materials": [
+        "申请人基本信息",
+        "学历、社保、无房及租房优惠情况通过系统数据共享获取",
+        "有劳务派遣经历者需由用工单位填写实际历史用工单位及统一社会信用代码"
+      ],
+      "process": [
+        "申请人向用人单位提交材料",
+        "用人单位通过亲清在线数字平台申报",
+        "系统自动比对审核",
+        "审核通过后拨付"
+      ],
+      "location": "市级",
+      "url": "https://www.hangzhou.gov.cn/art/2025/2/17/art_1229063415_4332615.html"
+    },
+    "policySource": "杭委人办〔2021〕7号",
+    "effectiveDate": "2020-02-24",
+    "notes": "有效。每户每年1万元，可发放三年；期满后收入低于城镇居民人均可支配收入的，可继续享受，最长不超过三年。申请家庭在杭无房且未享受公租房、人才租赁房等优惠。",
+    "location": "杭州市",
+    "tier": 1
+  },
+  {
+    "id": "hangzhou-shiji-gaoxiaobiyejiuyebutie",
+    "city": "hangzhou",
+    "name": "杭州市高校毕业生到中小微企业就业补贴",
+    "category": "employment",
+    "amount": {
+      "min": 2000,
+      "max": 6000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "conditions": {
+      "degree": ["专科", "本科", "硕士", "博士"],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": false
+    },
+    "application": {
+      "deadline": "符合条件后的次月至次年12月底",
+      "channel": "浙江政务服务网或浙里办APP",
+      "materials": [
+        "居民身份证或社会保障卡",
+        "高校毕业生就业补贴申请表",
+        "相关学历证明（毕业证书、教育部学籍在线验证报告或国外学历学位认证书等）"
+      ],
+      "process": [
+        "登录浙江政务服务网或浙里办APP搜索高校毕业生就业补贴申领",
+        "选择杭州市及企业注册地所在区",
+        "在线填写并上传材料",
+        "经办机构审核、公示",
+        "拨付"
+      ],
+      "location": "市级",
+      "url": "https://m.hz.bendibao.com/live/101843.shtm"
+    },
+    "policySource": "浙政发〔2011〕61号、浙委办发〔2017〕46号",
+    "effectiveDate": "2016-02-01",
+    "notes": "有效。每年2000元，补贴期限不超过3年，累计最高6000元。需到注册地在杭州市区的1000人以下中小微企业就业，连续缴纳社保满12个月且工资收入低于上年度市区全社会在岗职工平均工资。与小微企业新招用高校毕业生社保补贴不得同时享受。",
+    "location": "杭州市",
+    "tier": 1
+  },
+  {
+    "id": "hangzhou-shiji-xibuquxianman3nian",
+    "city": "hangzhou",
+    "name": "杭州市西部区县工作满3年再次生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 100000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 100000,
+        "max": 100000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "在西部区县连续工作满3年后申请",
+      "channel": "杭州市民卡APP—杭州人才码或亲清在线数字平台",
+      "materials": [
+        "申请人基本信息",
+        "学历、社保信息通过系统共享获取",
+        "有劳务派遣经历者需由用工单位填写实际历史用工单位及统一社会信用代码"
+      ],
+      "process": [
+        "一般由系统自动比对审核发放",
+        "未自动发放的，在杭州市民卡APP生活补贴模块或亲清在线点击西部区县工作满三年再次补贴申请按钮申请",
+        "审核通过后拨付"
+      ],
+      "location": "市级",
+      "url": "https://hrss.hangzhou.gov.cn/art/2024/5/13/art_1229810556_4336829.html"
+    },
+    "policySource": "杭人社发〔2023〕126号",
+    "effectiveDate": "2019-06-03",
+    "notes": "有效。在富阳区、临安区、桐庐县、淳安县、建德市领取市级应届毕业生生活补贴后，继续在当地符合条件的用人单位连续工作满3年可再领一次。本科1万、硕士3万、博士10万；按原标准5万元申领补贴的博士仍按5万元执行。",
+    "location": "杭州市",
+    "tier": 2
+  },
+  {
+    "id": "hangzhou-xiaoshan-zhuandazufangbutie",
+    "city": "hangzhou",
+    "name": "萧山区新引进应届大学生（全日制大专学历）租房补贴",
+    "category": "rent",
+    "amount": {
+      "min": 4000,
+      "max": 12000,
+      "unit": "元",
+      "period": "分期"
+    },
+    "conditions": {
+      "degree": ["专科"],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "符合条件后申请",
+      "channel": "亲清在线数字平台",
+      "materials": [
+        "申请家庭成员姓名及证件号码",
+        "申请人银行卡等基本信息",
+        "学历、社保、房产及租房优惠政策信息通过系统数据共享获取"
+      ],
+      "process": [
+        "申请人向所在用人单位提交材料",
+        "用人单位登录亲清在线平台",
+        "搜索萧山区新引进应届大学生（全日制大专学历）租房补贴",
+        "点击兑现并填写员工信息提交"
+      ],
+      "location": "萧山区",
+      "url": "https://m.hz.bendibao.com/live/165301.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2025-01-01",
+    "notes": "有效。2025年1月1日后毕业的全日制大专应届毕业生，在萧山区就业或创业，并在萧山区连续缴纳社保满6个月可申请。每年4000元，分两次发放，最长3年，累计1.2万元。申请家庭在杭州主城区、萧山区、余杭区、临平区范围内无房产且无房产交易记录，同时未享受其他租房优惠政策。",
+    "location": "杭州市·萧山区",
+    "tier": 1,
+    "exclusiveGroup": "hangzhou-district"
+  },
+  {
+    "id": "hangzhou-binjiang-boshishuoshishenghuobutie",
+    "city": "hangzhou",
+    "name": "滨江区新引进全日制应届博士、硕士毕业生生活及租房补贴",
+    "category": "living",
+    "amount": {
+      "min": 54000,
+      "max": 98000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "硕士": {
+        "min": 54000,
+        "max": 54000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 98000,
+        "max": 98000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": ["硕士", "博士"],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true
+    },
+    "application": {
+      "deadline": "符合条件后申请",
+      "channel": "亲清在线数字平台",
+      "materials": [
+        "申请人身份证",
+        "学历学位证书",
+        "劳动合同",
+        "社保缴纳证明",
+        "无房及未享受住房优惠政策承诺书"
+      ],
+      "process": [
+        "登录亲清在线数字平台",
+        "搜索新引进人才租房补贴",
+        "由用人单位进行网上申报",
+        "审核通过后拨付"
+      ],
+      "location": "滨江区",
+      "url": "https://m.hz.bendibao.com/live/140775.shtm"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2018-02-01",
+    "notes": "有效。税收在滨江区的企业新引进全日制应届博士、硕士毕业生。博士：第一年5万元一次性生活补贴，第二、第三年2000元/月租房补贴，合计9.8万元；硕士：第一年3万元一次性生活补贴，第二、第三年1000元/月租房补贴，合计5.4万元。需与企业签订1年及以上劳动合同并缴纳社保，申请人及家庭成员在杭州市城区无住房且未享受其他住房优惠政策。区所属行政事业单位及国有企业不列入租房补贴范围。",
+    "location": "杭州市·滨江区",
+    "tier": 1,
+    "exclusiveGroup": "hangzhou-district"
+  },
+  {
+    "id": "hangzhou-yuhang-yingjieshenghuozaiqibutie",
+    "city": "hangzhou",
+    "name": "余杭区应届毕业生再次生活补贴",
+    "category": "living",
+    "amount": {
+      "min": 10000,
+      "max": 50000,
+      "unit": "元",
+      "period": "一次性"
+    },
+    "tieredAmount": {
+      "本科": {
+        "min": 10000,
+        "max": 10000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "硕士": {
+        "min": 30000,
+        "max": 30000,
+        "unit": "元",
+        "period": "一次性"
+      },
+      "博士": {
+        "min": 50000,
+        "max": 50000,
+        "unit": "元",
+        "period": "一次性"
+      }
+    },
+    "conditions": {
+      "degree": ["本科", "硕士", "博士"],
+      "graduationYear": "within_2_years",
+      "employmentRequired": true,
+      "householdRequired": false,
+      "requiresFullTime": true,
+      "criterionSets": [
+        {
+          "id": "yuhang-bachelor",
+          "name": "本科生（须为国内双一流高校或余杭区全面合作高校）",
+          "degree": ["本科"],
+          "schoolLevel": ["双一流"]
+        },
+        {
+          "id": "yuhang-master",
+          "name": "硕士研究生",
+          "degree": ["硕士"]
+        },
+        {
+          "id": "yuhang-doctor",
+          "name": "博士研究生",
+          "degree": ["博士"]
+        }
+      ]
+    },
+    "application": {
+      "deadline": "首次申领需在毕业后一年内在余杭区就业或自主创业；再次申领需在连续缴纳社保满3年后的6个月内",
+      "channel": "亲清在线数字平台或杭州人才码",
+      "materials": [
+        "学历证书和教育部学历证书电子注册备案表（国内高校）或教育部留学服务中心学历学位认证书（国（境）外高校）",
+        "劳动合同或自主创业证明",
+        "社保缴纳证明",
+        "劳务派遣人员需提供有效期内劳务派遣合同"
+      ],
+      "process": [
+        "申请人向用人单位提交材料",
+        "用人单位按纳税地登录亲清在线平台或杭州人才码申报",
+        "审核通过后一次性发放",
+        "连续缴纳社保满3年后6个月内由用人单位通过亲清在线申请再次补贴"
+      ],
+      "location": "余杭区",
+      "url": "https://g.bm.manmankan.com/hangzhou/202211/5835.shtml"
+    },
+    "policySource": "待核实",
+    "effectiveDate": "2019-06-03",
+    "notes": "有效。毕业2019年6月3日（含）之后，在余杭区用人单位就业或自主创业的全日制本科、硕士、博士研究生。本科生毕业院校须为国内世界一流大学建设高校或余杭区全面合作高校；系统目前以双一流为参考条件，非双一流的合作高校名单请以余杭区官方最新通知为准。首次领取后，在余杭区连续缴纳社保满3年可再次申领同等金额。2025年9月余杭区发布双补贴新政，本科及以上应届毕业生最高可享18万元生活补贴、3年最高3万元租房补贴，具体细则以官方最新通知为准。",
+    "location": "杭州市·余杭区",
+    "tier": 2,
+    "exclusiveGroup": "hangzhou-district"
+  }
+]

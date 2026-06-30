@@ -3,6 +3,7 @@ import shanghai from './subsidies/shanghai.json';
 import shenzhen from './subsidies/shenzhen.json';
 import guangzhou from './subsidies/guangzhou.json';
 import hefei from './subsidies/hefei.json';
+import hangzhou from './subsidies/hangzhou.json';
 import cityConditions from './city-conditions.json';
 import type { Subsidy } from '../types';
 import type { CityConditions, CityConditionsConfig, ConditionSet } from './lazySchools';
@@ -13,6 +14,7 @@ export const subsidiesData: Record<string, Subsidy[]> = {
   shenzhen: shenzhen as Subsidy[],
   guangzhou: guangzhou as Subsidy[],
   hefei: hefei as Subsidy[],
+  hangzhou: hangzhou as Subsidy[],
 };
 
 export function getSubsidiesByCity(city: string): Subsidy[] {
@@ -148,6 +150,7 @@ export function getCityLevelLocation(city: string): string {
     shenzhen: '深圳市',
     guangzhou: '广州市',
     hefei: '合肥市',
+    hangzhou: '杭州市',
   };
   return map[city] || '';
 }

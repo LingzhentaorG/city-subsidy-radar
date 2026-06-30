@@ -127,6 +127,23 @@
       },
       "locationDependentFields": [],
       "districts": {}
+    },
+    "hangzhou": {
+      "base": {
+        "degree": true,
+        "schoolLevel": false,
+        "ageLimit": true,
+        "graduationYear": true,
+        "employmentRequired": true,
+        "householdRequired": false,
+        "major": false
+      },
+      "locationDependentFields": [],
+      "districts": {
+        "萧山区": {},
+        "滨江区": {},
+        "余杭区": {}
+      }
     }
   }
 }

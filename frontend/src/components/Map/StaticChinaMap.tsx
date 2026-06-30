@@ -11,6 +11,7 @@ const COVERED_CITIES = [
   { name: '深圳市', code: 'shenzhen', adcode: '440300', count: 14 },
   { name: '广州市', code: 'guangzhou', adcode: '440100', count: 6 },
   { name: '合肥市', code: 'hefei', adcode: '340100', count: 2 },
+  { name: '杭州市', code: 'hangzhou', adcode: '330100', count: 7 },
 ];
 
 export default function StaticChinaMap(_props: StaticChinaMapProps) {

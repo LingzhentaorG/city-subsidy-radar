@@ -476,6 +476,7 @@ const EXCLUSIVE_GROUP_NAMES: Record<string, string> = {
   'shanghai-district': '上海区级补贴（只能在一个区享受）',
   'guangzhou-district': '广州区级补贴（只能在一个区享受）',
   'beijing-district': '北京区级补贴（只能在一个区享受）',
+  'hangzhou-district': '杭州区级补贴（只能在一个区享受）',
 };
 
 export function getExclusiveGroupName(groupId: string): string {

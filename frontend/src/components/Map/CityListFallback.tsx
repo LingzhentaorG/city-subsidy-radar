@@ -8,6 +8,7 @@ const COVERED_CITIES = [
   { code: 'shenzhen', name: '深圳', count: 14 },
   { code: 'guangzhou', name: '广州', count: 6 },
   { code: 'hefei', name: '合肥', count: 2 },
+  { code: 'hangzhou', name: '杭州', count: 7 },
 ];
 
 export default function CityListFallback({ onCityClick }: CityListFallbackProps) {

@@ -376,7 +376,7 @@ export default function Input() {
           returneeStatus: isOverseas ? 'within_2_years' : undefined,
         };
 
-        const cities: CityCode[] = ['beijing', 'shanghai', 'shenzhen', 'guangzhou', 'hefei'];
+        const cities: CityCode[] = ['beijing', 'shanghai', 'shenzhen', 'guangzhou', 'hefei', 'hangzhou'];
         const compareResults = matchMultipleCities(userProfile, cities);
         setCompareResults(compareResults);
         navigate('/compare');
